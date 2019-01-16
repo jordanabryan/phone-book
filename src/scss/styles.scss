@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand|Satisfy');
+
+*{
+	padding: 0;
+	margin: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html{
+	height: 100vh;
+}
+
+body{
+	font-family: 'Quicksand', sans-serif;
+	height: 100vh;
+}
+
+ul, li{
+	list-style: none;
+}
+
+img{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+h1, .h1{
+	font-family: 'Satisfy', cursive;
+	font-size: 2em;
+}
+
+h2, .h2{
+	font-size: 2em;
+}
+
+p{
+	font-size: 1.3em;
+	margin-bottom: 5px;
+}
+
+#root{
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	max-width: 600px;
+	background: #fff;
+	margin: 10px auto;
+}
+
+.example-enter {
+  position: relative;
+  right: -300px;
+  opacity: 0;
+  transition: all 500ms ease-in;
+}
+
+.example-enter.example-enter-active {
+  right: 0;
+  opacity: 1; 
+  transition: all 500ms ease-in;
+}
+
+.example-leave {
+  right: 0;
+  opacity: 1;
+  transition: all 500ms ease-in;
+}
+
+.example-leave.example-leave-active {
+  right: -300px;
+  opacity: 0;
+  transition: all 300ms ease-in;
+}
